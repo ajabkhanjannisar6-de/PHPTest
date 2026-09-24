@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
+Route::get('/auth/login', function () {
+    return view('auth.login');
+});
+
 Route::patch('/user', function () {
     return 'This is a patch route.';
 });
